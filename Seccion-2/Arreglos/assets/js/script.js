@@ -104,6 +104,13 @@ let pos = 1;
 let juegosBorrados = juegos.splice(pos, 2);
 console.log({juegosBorrados, juegos});
 
+// El metodo indexOf() nos permite saber en que posicion se encuentra un elemento dentro de nuestro arreglo: 
+
+let robloxIndex = juegos.indexOf('Roblox'); // Mucho Ojo al escribir el termino de busqueda porque es case sensitive o sea distingue mayúsculas y minúsculas, si escribimos el nombre del elemento mal 
+
+console.log({robloxIndex});// Nos indica que se encuentra en la posicion 1 
+
+
 
 
 
