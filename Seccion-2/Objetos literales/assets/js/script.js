@@ -6,7 +6,7 @@
 
 */
 
-let personaje = {
+const personaje = {
 
     nombre: 'Tony Stark',
     codeName: 'Ironman',
@@ -53,12 +53,43 @@ console.log('Vivo:', personaje[x]);
 
 console.log('Ultima Pelicula: ',personaje["Ultima-Pelicula"] );
 
+// Más detalles
+
+//Eliminar una propiedad de un  objeto : 
 
 
+delete personaje.edad;
+
+console.log(personaje); // Imprime nuestr objeto y podemos revisar que la propiedad edad no existe, fue borrada.
 
 
+// Crear una nueva propiedad en el objeto:
+personaje.casado = true;
+
+// Trabajar nuestro objeto como si fuera un arreglo: 
+const entriesPares = Object.entries(personaje);
+console.log(entriesPares);
+
+// Para hacer un bloqueo de las propiedades o modificaciones utilamos la siguiente instrucción.
+
+Object.freeze(personaje);
+
+personaje.dinero = 100000000000;
+personaje.casado = false;
+
+console.log(personaje);
 
 
+// Nota : El metodo freeze bloquea la modificacion de propiedades directas del objeto pero no a los objetos que estan dentro del objeto principal 
 
 
+personaje.direccion.ubicacion = 'Costa Rica';
+console.log(personaje);
+
+
+// Listar las propiedades y valores de un objeto: 
+
+const propiedades = Object.getOwnPropertyNames(personaje);
+const valores     = Object.values(personaje);
+console.log({propiedades, valores});
 
