@@ -23,13 +23,20 @@ saludoDos();
 
 // Argumentos de una funcion
 
-function saludoInicial(nombreUsuario){
-    console.log('Hola Bienvenido! ',nombreUsuario);
+function saludoInicial(UserName){
+    console.log('Hola Bienvenido! ',UserName);
     
 }
 
 saludoInicial('Breiner Abello')
 
 
+// Funciones de flechas
 
+const MensajeDespedida = (UserName) => {
+    console.log('Hasta pronto ',UserName);
+    
+}
+
+MensajeDespedida('Breiner');
 
