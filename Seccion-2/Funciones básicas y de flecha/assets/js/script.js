@@ -7,6 +7,29 @@
 // Ejemplo de una funcion básica:
 
 function saludar(){
-    console.log('Hola Mundo');
+    console.log('Hola Mundo desde una funcion básica');
 }
+
+saludar();
+
+// Funcion anónima
+
+const saludoDos = function(){
+    console.log('Hola Mundo desde una funcion anónima');
+    
+}
+
+saludoDos();
+
+// Argumentos de una funcion
+
+function saludoInicial(nombreUsuario){
+    console.log('Hola Bienvenido! ',nombreUsuario);
+    
+}
+
+saludoInicial('Breiner Abello')
+
+
+
 
