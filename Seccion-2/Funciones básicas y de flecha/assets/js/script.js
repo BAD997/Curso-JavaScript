@@ -136,8 +136,6 @@ console.log({nuevoApellido});
 
 // Desestructuración de argumentos
 
-
-
 const tony = {
 
     nombre: 'Tony Stark',
@@ -152,4 +150,12 @@ const tony = {
     
 };
 
+const imprimePropiedades = ({nombre,codeName,vivo,edad,trajes}) => { 
+    console.log({nombre});
+    console.log({codeName});
+    console.log({vivo});
+    console.log({edad});
+    console.log({trajes});
+}
 
+imprimePropiedades(tony);
