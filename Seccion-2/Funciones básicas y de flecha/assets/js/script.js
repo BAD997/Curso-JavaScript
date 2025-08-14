@@ -103,8 +103,10 @@ const persona = crearPersona('Breiner', ' Abello');
 
 console.log(persona);
 
-const imprimeArgumentos = (...arguments) => { 
-    console.log(arguments);
+// Uso del parametro Rest: La sintaxis de los parámetros rest nos permiten representar un número indefinido de argumentos como un array, consideraciones, #1 despues del parametro Rest no puede haber ningun otro argumento, #2 Si necesitas extraer una variable antes del parametro Rest entonces dicha variable tendra su propio valor independiente.
+
+const imprimeArgumentos = (edad,...arguments) => { 
+    console.log({edad,arguments});
     
 }
 
