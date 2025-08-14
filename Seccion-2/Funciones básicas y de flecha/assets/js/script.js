@@ -78,13 +78,10 @@ console.log({retor}); // imprime el retorno de nuestra funcion miFuncion
 
 // #1 
 const sumar = (a,b) =>  a + b; // Retorna la suma de los dos argumentos. 
-
 console.log(sumar(8,2));
 
 // #2
 const getAleatorio = () => Math.random();
-
-
 console.log(getAleatorio());
 
 
