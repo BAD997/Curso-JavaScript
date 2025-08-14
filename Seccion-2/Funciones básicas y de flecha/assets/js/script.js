@@ -67,5 +67,24 @@ const retor = mifuncion();
 console.log({retor}); // imprime el retorno de nuestra funcion miFuncion 
 
 
+// Ejercicios: 
+
+
+// Nota: Cuando tenemos una funcion de flecha que solo contiene una linea y esa linea es  un return podemos resumirla de la siguiente manera. 
+
+// const sumar = (a,b) => { 
+//     return a + b; // Retorna la suma de los dos argumentos. 
+// }
+
+// #1 
+const sumar = (a,b) =>  a + b; // Retorna la suma de los dos argumentos. 
+
+console.log(sumar(8,2));
+
+// #2
+const getAleatorio = () => Math.random();
+
+
+console.log(getAleatorio());
 
 
