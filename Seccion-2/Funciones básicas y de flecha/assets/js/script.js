@@ -47,14 +47,24 @@ MensajeDespedida('Breiner');
 function funretor(){
     console.log('Mensaje 1');
     return 10 ;
-    
     console.log('Soy un codigo que está despues de un return'); // Importante saber que todo el codigo que esté despues del return de la funcion no se ejecutará en nuestro programa. 
-    
     
 }
 
 const retorno =  funretor();
 console.log({retorno});
+
+/*
+    Se puede retornar cualquier cosa por ejemplo un arreglo:
+*/
+
+const mifuncion = () => {
+    return [1,2,3,4,5];
+}
+
+const retor = mifuncion();
+
+console.log({retor}); // imprime el retorno de nuestra funcion miFuncion 
 
 
 
