@@ -103,8 +103,8 @@ const persona = crearPersona('Breiner', ' Abello');
 
 console.log(persona);
 
-function imprimeArgumentos()  { 
-    console.log( arguments );
+const imprimeArgumentos = (...arguments) => { 
+    console.log(arguments);
     
 }
 
