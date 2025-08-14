@@ -106,8 +106,50 @@ console.log(persona);
 // Uso del parametro Rest: La sintaxis de los parámetros rest nos permiten representar un número indefinido de argumentos como un array, consideraciones, #1 despues del parametro Rest no puede haber ningun otro argumento, #2 Si necesitas extraer una variable antes del parametro Rest entonces dicha variable tendra su propio valor independiente.
 
 const imprimeArgumentos = (edad,...arguments) => { 
-    console.log({edad,arguments});
-    
+    // console.log({edad,arguments});
+    return arguments;
 }
 
-imprimeArgumentos(10,15,true, 'Breiner', 'Hola');
+/*
+ Este es un ejemplo de desestructuración de arrays. El código toma el array que devuelve imprimeArgumentos() y asigna cada valor del array a una variable, siguiendo el orden.
+*/
+
+const [casado, vivo, nombre, saludo] = imprimeArgumentos(10,true,false, 'Breiner', 'Hola');
+
+console.log({casado, vivo, nombre, saludo});
+
+/*
+
+    Este es un ejemplo de desestructuración de objetos. El código toma el objeto que devuelve crearPersona() y extrae solo la propiedad apellido, asignando su valor a una nueva variable llamada apellido.
+
+*/
+
+const {apellido} = crearPersona('Breiner', ' Abello');
+
+console.log({apellido});
+
+// En caso de querer cambiarle el nombre a la variable...
+
+const {apellido:nuevoApellido} = crearPersona('Breiner', 'Dominguez');
+
+console.log({nuevoApellido});
+
+// Desestructuración de argumentos
+
+
+
+const tony = {
+
+    nombre: 'Tony Stark',
+    codeName: 'Ironman',
+    vivo: false,
+    edad:40,
+    trajes: [
+        'Mark I',
+        'Mark V',
+        'Hulkbuster'
+    ],
+    
+};
+
+
