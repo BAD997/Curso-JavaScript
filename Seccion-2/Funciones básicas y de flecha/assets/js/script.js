@@ -40,3 +40,22 @@ const MensajeDespedida = (UserName) => {
 
 MensajeDespedida('Breiner');
 
+// Retorno de las funciones
+
+// NOTA: Cuando se tiene una funcion y dicha funcion no tenga un return explicito lo que se retorna es undefined.
+
+function funretor(){
+    console.log('Mensaje 1');
+    return 10 ;
+    
+    console.log('Soy un codigo que está despues de un return'); // Importante saber que todo el codigo que esté despues del return de la funcion no se ejecutará en nuestro programa. 
+    
+    
+}
+
+const retorno =  funretor();
+console.log({retorno});
+
+
+
+
