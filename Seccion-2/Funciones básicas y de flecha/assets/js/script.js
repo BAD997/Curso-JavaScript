@@ -85,3 +85,21 @@ const getAleatorio = () => Math.random();
 console.log(getAleatorio());
 
 
+/*
+    Protips para mejorar nuestra forma de codificar y estructurar funciones
+
+    Funcion básica para crear una persona y retornar un objeto persona
+
+    Cuando queremos retornar algo en un objeto y el nombre de la propiedad es  exactamente igual al nombre de la variable a la cual se quiere hacer la impresion no hace falta de la siguiente manera:
+    nombre:nombre,
+    apellido: apellido,
+    
+    Podemos hacer lo siguiente: 
+*/
+
+const crearPersona =  (nombre, apellido ) => ({nombre,apellido}); // Estos parentesis indican a JavaScript que lo que queremos regresar es todo lo que esta dentro de parentesis como objeto. 
+ 
+const persona = crearPersona('Breiner', ' Abello');
+
+console.log(persona);
+
