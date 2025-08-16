@@ -120,5 +120,15 @@
 
     let juan = {nombre: 'Juan'};
     let ana  = juan;
-    console.log({juan, ana}); // Imprime en consola juan = {nombre: 'Juan'} y ana = {nombre: 'Juan'}
     ana.nombre = 'Ana';
+    console.log({juan, ana}); // Imprime en consola juan = {nombre: 'Juan'} y ana = {nombre: 'Juan'}
+
+    /*
+        ¿A que se debe este comportamiento?
+
+        En este caso, cuando asignamos el objeto juan a la variable ana, no se crea una copia del objeto, sino que ambas variables apuntan al mismo objeto en memoria. Por lo tanto, cualquier cambio realizado a través de una de las variables afectará al objeto original y a la otra variable.
+
+        NOTA: Recurden que todos los primitivos se asignan por valor y los objetos por referencia.
+     */
+
+        
