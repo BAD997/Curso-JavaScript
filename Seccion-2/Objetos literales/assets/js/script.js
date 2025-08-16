@@ -119,7 +119,7 @@
 // Ahora veamos por referencia
 
     let juan = {nombre: 'Juan'};
-    let ana  = juan;
+    let ana  = {...juan};
     ana.nombre = 'Ana';
     console.log({juan, ana}); // Imprime en consola juan = {nombre: 'Juan'} y ana = {nombre: 'Juan'}
 
@@ -131,4 +131,29 @@
         NOTA: Recurden que todos los primitivos se asignan por valor y los objetos por referencia.
      */
 
-        
+
+// Romper la referencia
+
+const cambiarNombre = ({...persona})=> {
+
+    persona.nombre = 'Tony';
+    return persona; 
+    
+}
+
+let peter = {nombre: 'Peter'};
+let tony = cambiarNombre(peter);
+
+console.log({peter, tony}); // Imprime en consola peter = {nombre: 'Tony'} y tony = {nombre: 'Tony'}
+
+// Si queremos romper la referencia, podemos hacer una copia del objeto utilizando el operador de propagación (spread operator) o el método Object.assign().
+
+// Mismo ejercicio pero con arreglos    
+
+const frutas = ['Manzana', 'Pera', 'Piña'];
+
+const otrasFrutas = [...frutas];
+
+otrasFrutas.push('Mango');
+
+console.table({frutas, otrasFrutas}); // Imprime en consola frutas = ['Manzana', 'Pera', 'Piña'] y otrasFrutas = ['Manzana', 'Pera', 'Piña', 'Mango']
