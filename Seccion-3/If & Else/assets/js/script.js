@@ -35,3 +35,21 @@ if (dia === 0){
 }else{
     console.log("No es un día de la semana válido");
 }       
+
+
+const diaLetras = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
+console.log({diaLetras});
+console.log(diaLetras[dia] || 'Día no válido');   
+
+const diasdelaSemana = {
+    0: 'Domingo',
+    1: 'Lunes',
+    2: 'Martes',
+    3: 'Miércoles',
+    4: 'Jueves',
+    5: 'Viernes',
+    6: 'Sábado'
+}   
+
+console.log(diasdelaSemana[dia] || 'Día no válido');
+
