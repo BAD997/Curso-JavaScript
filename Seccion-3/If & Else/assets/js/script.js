@@ -41,6 +41,7 @@ const diaLetras = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Vierne
 console.log({diaLetras});
 console.log(diaLetras[dia] || 'Día no válido');   
 
+
 const diasdelaSemana = {
     0: 'Domingo',
     1: 'Lunes',
