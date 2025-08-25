@@ -47,10 +47,25 @@ const regresaFalse = () => {
     console.log(regresaTrue() || regresaFalse()); // true explicación: primero se ejecuta la función regresaTrue() que retorna true, teniendo en cuenta que el operador || es un operador cortocircuito, no se ejecuta la función regresaFalse() y el resultado es true.
 
     console.warn('Asignaciones');
-    
-    
-  
+
+    const soyUndefined = undefined;
+    const soyNull = null;
+    const soyFalse = false;
+ 
 
 
+
+    const a1 = true && 'Hola Mundo' && 150; // 150 explicación: el operador && evalúa cada uno de los valores y retorna el último valor si todos son true.
+    const a2 = 'Hola' && 'Mundo' && soyFalse && true; // false explicación: el operador && evalúa cada uno de los valores y retorna el primer valor que sea false.
+    const a3 = soyFalse || 'yaNosoyfalso';
+    const a4 = soyFalse || soyUndefined|| soyNull || 'yaNosoyfalso'; // yaNosoyfalso explicación: el operador || evalúa cada uno de los valores y retorna el primer valor que sea true.
+    const a5 = soyFalse || soyUndefined|| regresaTrue() || 'yaNosoyfalso'; // true explicación: el operador || evalúa cada uno de los valores y retorna el primer valor que sea true.
+    console.log({a1, a2, a3, a4, a5});  
+
+    if (regresaFalse() && regresaTrue() && (true || false || true) ) {
+        console.log('Hacer algo');
+    } else {
+        console.log('Hacer otra cosa');
+    }   
 
     
